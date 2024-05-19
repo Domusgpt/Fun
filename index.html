@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency Golems Secret Prize Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes soundwave {
+            0% { transform: scaleY(1); }
+            50% { transform: scaleY(2); }
+            100% { transform: scaleY(1); }
+        }
+
+        .wave-bar {
+            animation: soundwave 0.5s infinite;
+        }
+
+        .wave-bar:nth-child(2) { animation-delay: 0.1s; }
+        .wave-bar:nth-child(3) { animation-delay: 0.2s; }
+        .wave-bar:nth-child(4) { animation-delay: 0.3s; }
+        .wave-bar:nth-child(5) { animation-delay: 0.4s; }
+
+        .hidden-button {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            opacity: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
+    <h1 class="text-4xl font-bold mb-8">Frequency Golems Secret Prize Page</h1>
+    <div class="flex space-x-2 mb-8 relative">
+        <div class="wave-bar w-2 h-16 bg-blue-500"></div>
+        <div class="wave-bar w-2 h-16 bg-blue-500"></div>
+        <div class="wave-bar w-2 h-16 bg-blue-500 relative">
+            <a href="found.html" class="hidden-button"></a>
+        </div>
+        <div class="wave-bar w-2 h-16 bg-blue-500"></div>
+        <div class="wave-bar w-2 h-16 bg-blue-500"></div>
+    </div>
+    <p class="text-lg">Send screenshot of this to Paul for free merch</p>
+</body>
+</html>
